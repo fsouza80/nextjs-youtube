@@ -1,6 +1,7 @@
 import { Box, Grid } from '@material-ui/core';
 import Layout from 'src/components/Layout';
 import VideoCard from 'src/components/Layout/VideoCard';
+import getVideos from 'src/database/getVideos';
 
 function Home({ data }) {
   return (
@@ -19,7 +20,7 @@ function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const data = [
+  /* const data = [
     {
       id: 1,
       title: 'fefefe',
@@ -65,7 +66,9 @@ export async function getStaticProps() {
       updateAt: new Date(),
     },
 
-  ];
+  ]; */
+
+  const data = await getVideos();
 
   return {
     props: {
