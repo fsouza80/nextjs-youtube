@@ -1,6 +1,6 @@
 import aws from 'aws-sdk';
 import multer from 'multer';
-import multers3 from 'multer-s3';
+import multerS3 from 'multer-s3';
 import crypto from 'crypto';
 
 aws.config.update({

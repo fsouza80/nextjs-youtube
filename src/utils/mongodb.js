@@ -2,8 +2,8 @@ import { MongoClient } from 'mongodb';
 
 const url = process.env.MONGODB_URL;
 const dbName = process.env.MONGODB_DB;
-const cachedDb;
-const cachedClient;
+let cachedDb;
+let cachedClient;
 
 if (!url) {
   throw new Error(
