@@ -29,6 +29,6 @@
           "custom": "ignore",
           "exceptions": [""]
         }],
-      "react/react-in-jsx-scope": "off"
-    }
+      "react/react-in-jsx-scope": "off",
+      "import/no-unsolved": "off"
 }
