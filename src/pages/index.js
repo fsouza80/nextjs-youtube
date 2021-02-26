@@ -1,13 +1,13 @@
 import { Button } from '@material-ui/core'
-import Head from 'next/head'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div>
+    <Layout title="Youtube">
       Clone Youtube
       <Button variant="contained" color="primary">
         Primary
       </Button>
-    </div>
+    </Layout>
   )
 }

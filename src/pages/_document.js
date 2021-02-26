@@ -6,13 +6,14 @@ import theme from '../theme';
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="pt-br">
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="shortcut icon"
+            href="https://www.youtube.com/s/desktop/daaab134/img/favicon.ico"
+            type="image/x-icon"
           />
         </Head>
         <body>
